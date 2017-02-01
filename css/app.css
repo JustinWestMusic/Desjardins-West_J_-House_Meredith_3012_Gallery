@@ -1,0 +1,462 @@
+@charset "UTF-8";
+
+
+
+/*Fonts*/
+
+@font-face 
+{
+    font-family: 'oswald_regularregular';
+    src: url('../fonts/oswald-regular-webfont.eot');
+    src: url('../fonts/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/oswald-regular-webfont.woff2') format('woff2'),
+         url('../fonts/oswald-regular-webfont.woff') format('woff'),
+         url('../fonts/oswald-regular-webfont.ttf') format('truetype'),
+         url('../fonts/oswald-regular-webfont.svg#oswald_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face 
+{
+    font-family: 'abeezeeregular';
+    src: url('../fonts/abeezee-regular-webfont.eot');
+    src: url('../fonts/abeezee-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/abeezee-regular-webfont.woff2') format('woff2'),
+         url('../fonts/abeezee-regular-webfont.woff') format('woff'),
+         url('../fonts/abeezee-regular-webfont.ttf') format('truetype'),
+         url('../fonts/abeezee-regular-webfont.svg#abeezeeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*Global Styles*/
+
+h2, h3, h4, h5, h6, label
+{
+	font-family:  'oswald_regularregular', Helvetica, sans-serif;
+}
+
+label
+{
+	font-weight: 700;
+	font-size: 1.8em;
+	color: white;
+}
+
+html, body, p, a, li
+{
+	font-family:  'abeezeeregular', Helvetica, Arial, sans-serif;
+}
+
+li
+{
+	list-style-type: none;
+}
+
+h2
+{
+	font-weight: 700;
+	/*padding-bottom: 10px;*/
+	font-size: 2em;
+}
+
+
+p
+{
+	font-size: 1.2em;
+	line-height: 1.6;
+}
+
+.centerText
+{
+	text-align: center;
+}
+
+/*.row
+{
+	min-width: 100%;
+}*/
+
+/*Header & Nav*/
+
+#header
+{
+	background: url('../images/banner.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+}
+
+.title-bar
+{
+	margin-bottom: 10px;
+	padding-right: 0rem;
+}
+
+.title-bar .menu-icon 
+{
+    margin-right: 0rem; 
+}
+
+.menu-icon::after
+{
+    background: white;
+    box-shadow: 0 7px 0 white, 0 14px 0 white; 
+}
+
+.menu-icon:hover::after 
+{
+    background: white;
+    box-shadow: 0 7px 0 white, 0 14px 0 white; 
+}
+
+#mainNav
+{
+	margin: 0;
+	text-align: center;
+}
+
+#mainNav li a
+{
+	font-size: 1.2em;
+	display: block;
+	color: white;
+	padding: 5px 0 5px 0;
+	text-transform: uppercase;
+	transition: all .3s ease-in-out;
+}
+
+
+#mainNav li a:hover
+{
+	text-decoration: underline;
+}
+
+.titleBorder
+{
+	border: 3px solid black;
+	display: inline-block;
+	padding: 10px 20px 0px 20px;
+	max-width: 100%;
+	margin-top: 50px;
+}
+
+.titleBorder h2
+{
+	padding-bottom: 0px;
+	margin: 0;
+}
+
+#header .titleBorder h2
+{
+	font-size: 3em;
+}
+
+#header .titleBorder
+{
+	border: 3px solid white;
+}
+
+#companyTagline
+{
+	margin-top: 3%;
+	margin-bottom: 5%;
+	font-size: 2em;
+}
+
+/*Index*/
+
+
+#westhouseSec1, #westhouseSec2, #westhouseSec3
+{
+	margin-top: 25px;
+	padding-bottom: 25px;
+}
+
+#westhouseSec1 .titleBorder
+{
+	margin-bottom: 40px;
+}
+
+
+/*#whatWeDoSec
+{
+	background: url('../images/desk.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}*/
+
+#swapper .titleBorder
+{
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+
+#whatWeDoSec p
+{
+	margin-bottom: 100px;
+}
+
+/*Contact Form*/
+
+#contactSec
+{
+	background: url('../images/buildings.jpg');
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+}
+
+#contactSec .titleBorder
+{
+	margin-top: 100px;
+	margin-bottom: 40px;
+	border-color: white;
+}
+
+
+#lname, #lemail, #lmsg
+{
+	text-align: center;
+}
+
+form
+{
+	margin: 0 auto;
+	text-align: center;
+}
+
+input[type='text'], input[type='email'], textarea
+{
+	margin-top: 3px;
+	margin-bottom: 50px;
+}	
+
+#send
+{
+	background-color: white;
+	border: none;
+	color: black;
+	padding: 10px;
+	transition: all .3s ease-in-out;
+}
+
+#send:hover
+{
+	background-color: black;
+	color: white;
+}
+
+#contactSec .titleBorder
+{
+	margin-bottom: 75px;
+}
+
+/*Footer*/
+
+#footer
+{
+	background: rgba(0,0,0,1);
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+.socIcon
+{
+	padding-top: 8px;
+	max-width: 52px;
+	display: inline-block;
+	margin: 0 auto;
+	padding-right: 20px;
+}
+
+#fbIcon
+{
+	max-width: 38px;
+}
+
+
+
+footer p
+{
+	margin-top: 20px;
+	text-align: center;
+	color: white;
+}
+
+#footerNav
+{
+	padding-top: 1%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+#footerNav ul li:last-child
+{
+	margin-right: 0px;
+}
+
+#footerNav ul li
+{
+	border-bottom: none;
+	margin-left: 20px;
+	display: inline;
+	color: white;
+}
+
+#footerNav li:first-child 
+{
+	border-top: none;
+}
+
+#footerNav ul li a
+{
+	display: inline;
+	font-size: 1.1em; 
+	transition: all .5s ease-in-out;
+	color: white;
+}
+
+#footerNav ul li a:hover
+{
+	font-size: 1.5em; 
+	background-color: transparent;
+}
+
+
+
+/*Medium and up*/
+@media only screen and (min-width: 40em) 
+{ 
+
+/*Global*/
+
+p
+{
+	font-size: 1.5em;
+}
+
+h2
+{
+	font-size: 3em;
+}
+
+/*Index*/
+
+#header .titleBorder h2
+{
+	font-size: 6em;
+}
+
+#lname, #lemail, #lmsg
+{
+	text-align: right;
+}
+
+
+/*Footer*/
+
+#socDiv
+{
+	text-align: center;
+	margin: 0 auto;
+}
+
+#footerNav ul li a
+{
+	display: inline;
+	font-size: 1.6em; 
+}
+
+/*Large and up*/
+@media screen and (min-width: 64em) /*1024*/
+{
+
+h2
+{
+	font-size: 3.5em;
+}
+
+#top-menu
+{
+	margin-top: 3%;
+}
+
+#mainNav
+{
+	padding-top: 1%;
+	padding-bottom: 3%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#mainNav ul
+{
+	margin-left: 0px;
+}
+
+
+#mainNav ul li:last-child
+{
+	margin-right: 0px;
+}
+
+#mainNav ul li
+{
+	border-bottom: none;
+	margin-left: 20px;
+	display: inline;
+}
+
+#mainNav li:first-child 
+{
+	border-top: none;
+}
+
+#mainNav ul li a
+{
+	display: inline;
+	font-size: 2em; 
+	transition: all .5s ease-in-out;
+
+}
+
+#mainNav ul li a:hover
+{
+	font-size: 1.5em; 
+	background-color: transparent;
+	text-decoration: none;
+}
+
+
+#westhouseSec1, #westhouseSec2, #westhouseSec3
+{
+	margin-top: 100px;
+	padding-bottom: 100px;
+}
+
+/*Footer*/
+
+#footerNav ul li a
+{
+	font-size: 2em; 
+}
+
+}
